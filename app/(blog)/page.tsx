@@ -20,7 +20,7 @@ function Intro(props: { title: string | null | undefined; description: any }) {
     : demo.description;
   return (
     <section className="mt-16 mb-16 flex flex-col items-center lg:mb-12 lg:flex-row lg:justify-between">
-      <h1 className="text-balance text-6xl font-bold leading-tight tracking-tighter lg:pr-8 lg:text-8xl">
+      <h1 className="text-balance text-6xl font-bold leading-tight tracking-tighter lg:pr-8 lg:text-5xl">
         {title || demo.title}
       </h1>
       <h2 className="text-pretty mt-5 text-center text-lg lg:pl-8 lg:text-left">
@@ -51,7 +51,7 @@ function HeroPost({
       </Link>
       <div className="mb-20 md:mb-28 md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8">
         <div>
-          <h3 className="text-pretty mb-4 text-4xl leading-tight lg:text-6xl">
+          <h3 className="text-pretty mb-4 text-3xl leading-tight lg:text-4xl">
             <Link href={`/posts/${slug}`} className="hover:underline">
               {title}
             </Link>
@@ -62,7 +62,7 @@ function HeroPost({
         </div>
         <div>
           {excerpt && (
-            <p className="text-pretty mb-4 text-lg leading-relaxed">
+          <p className="text-pretty mb-4 text-lg leading-relaxed">
               {excerpt}
             </p>
           )}
@@ -98,7 +98,7 @@ export default async function Page() {
       )}
       {heroPost?._id && (
         <aside>
-          <h2 className="mb-8 text-6xl font-bold leading-tight tracking-tighter md:text-7xl">
+          <h2 className="mb-8 text-4xl font-bold leading-tight tracking-tighter md:text-6xl">
             More Stories
           </h2>
           <Suspense>
