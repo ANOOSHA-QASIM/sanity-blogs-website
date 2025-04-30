@@ -1,0 +1,22 @@
+{
+  "node": {
+    "7f3b2aeddfe356f73fab44a2ff93e583c77c9f84ef": {
+      "workers": {
+        "app/(blog)/page": {
+          "moduleId": "[project]/.next-internal/server/app/(blog)/page/actions.js { ACTIONS_MODULE0 => \"[project]/node_modules/next-sanity/dist/visual-editing/server-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
+        },
+        "app/(blog)/posts/[slug]/page": {
+          "moduleId": "[project]/.next-internal/server/app/(blog)/posts/[slug]/page/actions.js { ACTIONS_MODULE0 => \"[project]/node_modules/next-sanity/dist/visual-editing/server-actions.js [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/(blog)/page": "action-browser",
+        "app/(blog)/posts/[slug]/page": "action-browser"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "1UOF4aISSp6Y2tMSy3L+61Q0eEHnzJnl7azJE+QL894="
+}
